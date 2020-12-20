@@ -1,0 +1,1 @@
+This repo stores all my web development projects that I completed for my learning.
