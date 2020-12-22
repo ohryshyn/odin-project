@@ -1,6 +1,56 @@
 .year {
-    font-weight: 800;
+  font-weight: 800;
 }
 #main {
-    background-color: lightslategray;
+  background-color: rgba(213, 217, 223, 0.493);
+}
+#img-div {
+  background-color: white;
+  width: auto;
+  padding: 10px;
+  margin: 0;
+}
+#image {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img-caption {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+h3,
+h2 {
+  text-align: center;
+  color: rgb(53, 52, 52);
+}
+#title {
+  text-align: center;
+}
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+li {
+  margin: 16px 0;
+}
+#quote-div {
+  font-style: italic;
+  max-width: 580px;
+  margin: 0 auto 50px auto;
+}
+#sub-title {
+  text-align: center;
+  opacity: 0.7;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont;
+  color: rgb(58, 57, 57);
+}
+h1 {
+  font-size: 2.5rem;
 }
