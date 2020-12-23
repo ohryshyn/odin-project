@@ -12,5 +12,5 @@ ___
 
 ### Changelog
 
->**12/21/20** - added required CSS styling and finished the assignment
+>**12/21/20** - added required CSS styling and finished the assignment\
 >**12/20/20** - created the basic structure of the page, its plain text
