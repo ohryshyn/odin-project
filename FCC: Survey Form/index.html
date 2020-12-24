@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>FCC: Survey Form</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
     <header>
@@ -16,6 +16,7 @@
       <form id="survey-form">
         <label for="name" id="name-label">Name</label>
         <input
+          class="name-input"
           type="text"
           id="name"
           name="name"
@@ -25,6 +26,7 @@
 
         <label for="email" id="email-label">Email</label>
         <input
+          class="email-input"
           type="email"
           id="email"
           name="email"
@@ -35,7 +37,15 @@
         <label for="number" id="number-label"
           >Age <span id="clarification">(optional)</span></label
         >
-        <input type="number" id="number" name="number" placeholder="Age" min="18" max="99"/>
+        <input
+          class="age-input"
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Age"
+          min="18"
+          max="99"
+        />
 
         <label for="dropdown-job" id="dropdown-label"
           >Which option best describes your current role?</label
@@ -56,13 +66,13 @@
           name="recommend"
           value="definitely"
         />
-        <label for="definitely">Definitely</label>
+        <label class="input-radio" for="definitely">Definitely</label>
 
         <input type="radio" id="maybe" name="recommend" value="maybe" />
-        <label for="maybe">Maybe</label>
+        <label class="input-radio" for="maybe">Maybe</label>
 
         <input type="radio" id="not-sure" name="recommend" value="not-sure" />
-        <label for="not-sure">Not sure</label>
+        <label class="input-radio" for="not-sure">Not sure</label>
 
         <label for="dropdown-feature" id="dropdown-label"
           >What is your favourite feature of freeCodeCamp?</label
@@ -79,62 +89,68 @@
           What would you like to see improved?
           <span id="clarification">(Check all that apply)</span>
         </p>
-        <label for="front-end-projects">Front-end Projects</label>
+        <label class="input-check" for="front-end-projects"
+          >Front-end Projects</label
+        >
         <input
           id="front-end-projects"
           name="improvement"
           type="checkbox"
           value="front-end-projects"
         />
-        <label for="back-end-projects">Back-end Projects</label>
+        <label class="input-check" for="back-end-projects"
+          >Back-end Projects</label
+        >
         <input
           id="back-end-projects"
           name="improvement"
           type="checkbox"
           value="back-end-projects"
         />
-        <label for="data-viz">Data Visualization</label>
+        <label class="input-check" for="data-viz">Data Visualization</label>
         <input
           id="data-viz"
           name="improvement"
           type="checkbox"
           value="data-viz"
         />
-        <label for="challenges">Challenges</label>
+        <label class="input-check" for="challenges">Challenges</label>
         <input
           id="challenges"
           name="improvement"
           type="checkbox"
           value="challenges"
         />
-        <label for="open-source">Open Source Community</label>
+        <label class="input-check" for="open-source"
+          >Open Source Community</label
+        >
         <input
           id="open-source"
           name="improvement"
           type="checkbox"
           value="open-source"
         />
-        <label for="help-rooms">Gitter help rooms</label>
+        <label class="input-check" for="help-rooms">Gitter help rooms</label>
         <input
           id="help-rooms"
           name="improvement"
           type="checkbox"
           value="help-rooms"
         />
-        <label for="videos">Videos</label>
+        <label class="input-check" for="videos">Videos</label>
         <input id="videos" name="improvement" type="checkbox" value="videos" />
-        <label for="meetups">City Meetups</label>
+        <label class="input-check" for="meetups">City Meetups</label>
         <input
           id="meetups"
           name="improvement"
           type="checkbox"
           value="meetups"
         />
-        <label for="wiki">Wiki</label>
+        <label class="input-check" for="wiki">Wiki</label>
         <input id="wiki" name="improvement" type="checkbox" value="wiki" />
-        <label for="forum">Forum</label>
+        <label class="input-check" for="forum">Forum</label>
         <input id="forum" name="improvement" type="checkbox" value="forum" />
-        <label for="courses">Additional Courses</label>
+        <label class="input-check" for="courses">Additional Courses</label>
         <input
           id="courses"
           name="improvement"
