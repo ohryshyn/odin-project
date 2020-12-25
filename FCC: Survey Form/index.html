@@ -3,166 +3,213 @@
   <head>
     <meta charset="utf-8" />
     <title>FCC: Survey Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+    </style>
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
     <header>
-      <h1>freeCodeCamp Survey Form</h1>
-      <p id="ty-message">
+      <h1 id="main-msg" class="center-text">freeCodeCamp Survey Form</h1>
+      <p id="ty-message" class="center-text">
         Thank you for taking the time to help us improve the platform
       </p>
     </header>
     <main>
       <form id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input
-          class="name-input"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required
-        />
+        <div class="form-question">
+          <label for="name" id="name-label">Name</label>
+          <input
+            class="name-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-question">
+          <label for="email" id="email-label">Email</label>
+          <input
+            class="email-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-question">
+          <label for="number" id="number-label"
+            >Age <span id="clarification">(optional)</span></label
+          >
+          <input
+            class="age-input"
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Age"
+            min="18"
+            max="99"
+          />
+        </div>
+        <div class="form-question">
+          <label for="dropdown-job" id="dropdown-label"
+            >Which option best describes your current role?</label
+          >
+          <select id="dropdown-job" name="dropdown-job">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="na">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-question">
+          <p class="form-pg">Would you recommend freeCodeCamp to a friend?</p>
+          <label class="input-radio" for="definitely">
+            <input
+              type="radio"
+              id="definitely"
+              name="recommend"
+              value="definitely"
+            />
+            Definitely</label
+          >
+          <label class="input-radio" for="maybe">
+            <input type="radio" id="maybe" name="recommend" value="maybe" />
+            Maybe</label
+          >
+          <label class="input-radio" for="not-sure">
+            <input
+              type="radio"
+              id="not-sure"
+              name="recommend"
+              value="not-sure"
+            />
+            Not sure</label
+          >
+        </div>
+        <div class="form-question">
+          <label for="dropdown-feature" id="dropdown-label"
+            >What is your favourite feature of freeCodeCamp?
+            <select
+              id="dropdown-feature"
+              name="dropdown-feature"
+              class="dropdown-input"
+            >
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open-source">Open Source</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-question">
+          <p class="form-pg">
+            What would you like to see improved?
+            <span id="clarification">(Check all that apply)</span>
+          </p>
+          <label class="input-check" for="front-end-projects">
+            <input
+              id="front-end-projects"
+              name="improvement"
+              type="checkbox"
+              value="front-end-projects"
+            />Front-end Projects</label
+          >
+          <label class="input-check" for="back-end-projects">
+            <input
+              id="back-end-projects"
+              name="improvement"
+              type="checkbox"
+              value="back-end-projects"
+            />Back-end Projects</label
+          >
+          <label class="input-check" for="data-viz">
+            <input
+              id="data-viz"
+              name="improvement"
+              type="checkbox"
+              value="data-viz"
+            />Data Visualization</label
+          >
+          <label class="input-check" for="challenges">
+            <input
+              id="challenges"
+              name="improvement"
+              type="checkbox"
+              value="challenges"
+            />Challenges</label
+          >
+          <label class="input-check" for="open-source">
+            <input
+              id="open-source"
+              name="improvement"
+              type="checkbox"
+              value="open-source"
+            />Open Source Community</label
+          >
+          <label class="input-check" for="help-rooms">
+            <input
+              id="help-rooms"
+              name="improvement"
+              type="checkbox"
+              value="help-rooms"
+            />Gitter help rooms</label
+          >
+          <label class="input-check" for="videos">
+            <input
+              id="videos"
+              name="improvement"
+              type="checkbox"
+              value="videos"
+            />Videos</label
+          >
+          <label class="input-check" for="meetups">
+            <input
+              id="meetups"
+              name="improvement"
+              type="checkbox"
+              value="meetups"
+            />City Meetups</label
+          >
+          <label class="input-check" for="wiki">
+            <input
+              id="wiki"
+              name="improvement"
+              type="checkbox"
+              value="wiki"
+            />Wiki</label
+          >
+          <label class="input-check" for="forum">
+            <input
+              id="forum"
+              name="improvement"
+              type="checkbox"
+              value="forum"
+            />Forum</label
+          >
+          <label class="input-check" for="courses">
+            <input
+              id="courses"
+              name="improvement"
+              type="checkbox"
+              value="courses"
+            />Additional Courses</label
+          >
+        </div>
+        <div class="form-question">
+          <label for="comments">Any comments or suggestions?</label>
 
-        <label for="email" id="email-label">Email</label>
-        <input
-          class="email-input"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your Email"
-          required
-        />
-
-        <label for="number" id="number-label"
-          >Age <span id="clarification">(optional)</span></label
-        >
-        <input
-          class="age-input"
-          type="number"
-          id="number"
-          name="number"
-          placeholder="Age"
-          min="18"
-          max="99"
-        />
-
-        <label for="dropdown-job" id="dropdown-label"
-          >Which option best describes your current role?</label
-        >
-        <select id="dropdown-job" name="dropdown-job">
-          <option disabled selected value>Select current role</option>
-          <option value="student">Student</option>
-          <option value="full-time-job">Full Time Job</option>
-          <option value="full-time-learner">Full Time Learner</option>
-          <option value="na">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
-
-        <p>Would you recommend freeCodeCamp to a friend?</p>
-        <input
-          type="radio"
-          id="definitely"
-          name="recommend"
-          value="definitely"
-        />
-        <label class="input-radio" for="definitely">Definitely</label>
-
-        <input type="radio" id="maybe" name="recommend" value="maybe" />
-        <label class="input-radio" for="maybe">Maybe</label>
-
-        <input type="radio" id="not-sure" name="recommend" value="not-sure" />
-        <label class="input-radio" for="not-sure">Not sure</label>
-
-        <label for="dropdown-feature" id="dropdown-label"
-          >What is your favourite feature of freeCodeCamp?</label
-        >
-        <select id="dropdown-feature" name="dropdown-feature">
-          <option disabled selected value>Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="open-source">Open Source</option>
-        </select>
-
-        <p>
-          What would you like to see improved?
-          <span id="clarification">(Check all that apply)</span>
-        </p>
-        <label class="input-check" for="front-end-projects"
-          >Front-end Projects</label
-        >
-        <input
-          id="front-end-projects"
-          name="improvement"
-          type="checkbox"
-          value="front-end-projects"
-        />
-        <label class="input-check" for="back-end-projects"
-          >Back-end Projects</label
-        >
-        <input
-          id="back-end-projects"
-          name="improvement"
-          type="checkbox"
-          value="back-end-projects"
-        />
-        <label class="input-check" for="data-viz">Data Visualization</label>
-        <input
-          id="data-viz"
-          name="improvement"
-          type="checkbox"
-          value="data-viz"
-        />
-        <label class="input-check" for="challenges">Challenges</label>
-        <input
-          id="challenges"
-          name="improvement"
-          type="checkbox"
-          value="challenges"
-        />
-        <label class="input-check" for="open-source"
-          >Open Source Community</label
-        >
-        <input
-          id="open-source"
-          name="improvement"
-          type="checkbox"
-          value="open-source"
-        />
-        <label class="input-check" for="help-rooms">Gitter help rooms</label>
-        <input
-          id="help-rooms"
-          name="improvement"
-          type="checkbox"
-          value="help-rooms"
-        />
-        <label class="input-check" for="videos">Videos</label>
-        <input id="videos" name="improvement" type="checkbox" value="videos" />
-        <label class="input-check" for="meetups">City Meetups</label>
-        <input
-          id="meetups"
-          name="improvement"
-          type="checkbox"
-          value="meetups"
-        />
-        <label class="input-check" for="wiki">Wiki</label>
-        <input id="wiki" name="improvement" type="checkbox" value="wiki" />
-        <label class="input-check" for="forum">Forum</label>
-        <input id="forum" name="improvement" type="checkbox" value="forum" />
-        <label class="input-check" for="courses">Additional Courses</label>
-        <input
-          id="courses"
-          name="improvement"
-          type="checkbox"
-          value="courses"
-        />
-
-        <label for="comments">Any comments or suggestions?</label>
-
-        <textarea id="comments" name="comments">
-Enter your comments here...</textarea
-        >
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
 
         <input id="submit" type="submit" name="submit" />
       </form>
