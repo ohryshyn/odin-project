@@ -103,3 +103,7 @@ textarea {
   font-family: inherit;
   font-weight: 400;
 }
+
+.clarification {
+  font-size: 0.845em;
+}
