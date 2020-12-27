@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>FCC: Product Landing Page</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+      </style>
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
@@ -12,11 +15,14 @@
         src="https://i.pinimg.com/564x/0f/49/37/0f49374bcac2b14eb86dba0db32bbc05.jpg"
       />
       <nav id="nav-bar">
-        <div class="nav-link">Features</div>
-        <div class="nav-link">How It Works</div>
-        <div class="nav-link">Pricing</div>
+        <ul class="nav-bar">
+          <li class="nav-link"><a href="#features">Features</a></li>
+          <li class="nav-link"><a href="#video-section">How It Works</a></li>
+          <li class="nav-link"><a href="#pricing">Pricing</a></li>
+        </ul>
       </nav>
     </header>
+    <div id="sections">
     <section id="email-input">
       <h2>Handcrafted, home-made masterpieces</h2>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
@@ -196,6 +202,7 @@
         <button>Select</button>
       </div>
     </section>
+  </div>
     <footer id="footer">
       <ul>
         <li>Privacy</li>
@@ -203,9 +210,6 @@
         <li>Contact</li>
       </ul>
       <p id="copyright">Copyright 2016, Original Trombones</p>
-      <a href="https://icons8.com/icon/qdQpy48X3Rjv/star"
-        >Star icon by Icons8</a
-      >
     </footer>
   </body>
 </html>
