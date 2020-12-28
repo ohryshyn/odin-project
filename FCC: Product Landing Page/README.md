@@ -10,6 +10,7 @@ ___
 - [x] link an external video
 - [x] use FlexBox
 - [x] revise anchors
+- [ ] add @media queries
 
 ## Lessons Learned
 
