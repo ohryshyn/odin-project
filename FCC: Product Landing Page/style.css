@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(238, 238, 231);
+  background-color: rgb(233, 233, 233);
   font-family: "Comfortaa", cursive, sans-serif;
   margin: 0;
 }
@@ -18,6 +18,7 @@ body {
   background-color: inherit;
   margin-left: 50px;
   margin-right: 50px;
+  z-index: 9999;
 }
 
 #sections {
@@ -48,5 +49,143 @@ body {
   color: inherit;
 }
 .nav-link > a:hover {
-  color: hotpink;
+  color: rgb(236, 138, 27);
+}
+
+#email-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  width: 300px;
+  height: 25px;
+  margin-bottom: 0.8rem;
+  font-size: 0.875rem;
+}
+
+#submit {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(248, 196, 24);
+  border: none;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: background-color 0.75s;
+}
+
+#submit:hover {
+  background-color: rgb(255, 145, 0);
+}
+
+#features {
+  display: block;
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+.feature {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.feature-img {
+  min-width: 65px;
+  height: 100px;
+}
+
+.feature-text {
+  padding-left: 85px;
+}
+
+.feature-name {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.feature-name + p {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#video-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+}
+
+#pricing {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 1000px
+}
+
+.model-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 10px;
+  width: calc(100% / 3);
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 3px;
+  padding-bottom: 15px;
+}
+
+.model-name {
+  background-color: rgb(219, 218, 218);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.model-price + ul {
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.785rem;
+}
+
+.model-option button {
+  background-color: rgb(248, 196, 24);
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.75s;
+}
+
+.model-option button:hover{
+  background-color: rgb(255, 145, 0);
+}
+
+#footer {
+  background-color: hotpink;
+  position:fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
