@@ -21,6 +21,40 @@ body {
   z-index: 9999;
 }
 
+@media (max-width: 715px) {
+  #header,
+  .nav-bar {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  #header-img {
+    margin-left: 40px;
+  }
+  .nav-link {
+    line-height: 1.5em;
+    font-size: 0.95rem;
+  }
+  #email-input {
+    padding-top: 100px;
+  }
+  #email-input h2 {
+    width: 130%;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  #features {
+    text-align: center;
+    padding-right: 100px;
+  }
+
+  .feature-text p {
+    font-size: 0.9em;
+  }
+  .feature-img {
+    display: none;
+  }
+}
+
 #sections {
   margin: auto 100px;
   padding-top: 87px;
