@@ -14,4 +14,5 @@ ___
 
 ### Changelog
 
+>**12/30/2020** - added basic CSS positioning\
 >**12/29/2020** - created basic files, wrote plain HTML
