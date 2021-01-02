@@ -69,3 +69,21 @@ header {
 #main-doc li {
   margin: 20px 0px 0px 20px;
 }
+
+@media only screen and (max-width:640px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 47px;
+    max-height: 200px;
+    border-bottom: 2px solid;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 250px;
+  }
+}
