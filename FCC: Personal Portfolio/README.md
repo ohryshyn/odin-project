@@ -10,6 +10,10 @@ ___
 
 ___
 
-### Changelog
+## Lessons Learned
 
->**01/01/2021** - created basic files, plain HTML\
+- creating an auto-fit/auto-fill grid
+- linking files in another folders
+- fitting objects inside containers
+- using of vh/vw
+- animating with keyframes rule
