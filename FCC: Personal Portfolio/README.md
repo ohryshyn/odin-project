@@ -6,7 +6,7 @@ ___
 
 ## Goals
 
-- [] mimic [personal portfolio](https://codepen.io/freeCodeCamp/full/zNBOYG) following freeCodeCamp [user stories](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
+- [x] mimic [personal portfolio](https://codepen.io/freeCodeCamp/full/zNBOYG) following freeCodeCamp [user stories](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
 ___
 
