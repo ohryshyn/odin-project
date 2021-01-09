@@ -17,3 +17,4 @@ ___
 - fitting objects inside containers
 - using of vh/vw
 - animating with keyframes rule
+- [font awesome](https://fontawesome.com/) provides HQ icons
