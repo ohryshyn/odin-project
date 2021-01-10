@@ -4,7 +4,7 @@ In this project I mimicked the FCC personal portfolio.
 
 ___
 
-## Overview
+## Outcome
 
 Sample | Result
 :-----:|:------:
