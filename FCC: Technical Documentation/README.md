@@ -1,6 +1,14 @@
 # Technical Documentation
 
-In this project I will create the technical documentation page.
+In this project I created the technical documentation page.
+
+___
+
+## Outcome
+
+Sample | Result
+:-----:|:------:
+![sample page](src.png)|![finished project](result.png)
 
 ___
 

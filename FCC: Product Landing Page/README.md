@@ -1,6 +1,14 @@
 # Product Landing Page
 
-In this project I will create the landing product page where a user can explore the features and pricing of a product.
+In this project I created the landing product page where a user could explore the features and the pricing of a product.
+
+___
+
+## Outcome
+
+Sample | Result
+:-----:|:------:
+![sample page](src.png)|![finished project](result.png)
 
 ___
 

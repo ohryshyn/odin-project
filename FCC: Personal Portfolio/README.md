@@ -1,6 +1,16 @@
-# Technical Documentation
+# Personal Portfolio
 
-In this project I will create my starter personal portfolio.
+In this project I mimicked the FCC personal portfolio.
+
+___
+
+## Overview
+
+Sample | Result
+:-----:|:------:
+![sample page](outcome/src1.png)|![finished project](outcome/result1.png)
+![sample page](outcome/src2.png)|![finished project](outcome/result2.png)
+![sample page](outcome/src3.png)|![finished project](outcome/result3.png)
 
 ___
 
@@ -13,7 +23,7 @@ ___
 ## Lessons Learned
 
 - creating an auto-fit/auto-fill grid
-- linking files in another folders
+- linking files in local folders
 - fitting objects inside containers
 - using of vh/vw
 - animating with keyframes rule

@@ -1,6 +1,15 @@
 # Survey Form
 
-For this project I am developing a survey form to test the HTML forms knowledge and improve CSS understanding.
+In this project, I developed a survey form using HTML forms and CSS.
+___
+
+## Outcome
+
+Sample | Result
+:-----:|:------:
+![sample page](src.png)|![finished project](result.png)
+
+___
 
 ## Goals
 
@@ -8,7 +17,7 @@ For this project I am developing a survey form to test the HTML forms knowledge 
 - [x] add external fonts to HTML
 - [x] add external backgroung image
 - [x] revise HTML forms
-- [x] practise CSS Box Model elements styling
+- [x] practice CSS Box Model elements styling
 
 ___
 

@@ -3,7 +3,7 @@
 It was the first project that covered the basics of HTML and CSS.
 ___
 
-## Result
+## Outcome
 
 Sample | Result
 :-----:|:------:
