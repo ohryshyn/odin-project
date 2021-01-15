@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: rgb(65, 65, 65);
 }
 li {
   list-style-type: none;
@@ -28,14 +29,15 @@ li {
 
 .btn {
   background-color: rgba(206, 199, 197, 0.192);
-  padding: 5px 15px;
+  padding: 7.5px 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .sign-in {
-  background-color: rgb(52, 115, 252);
+  background-color: rgb(74, 131, 255);
   color: white;
+  font-weight: 600;
 }
 
 /* main section */
@@ -45,7 +47,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 #search-bar {
@@ -78,11 +80,29 @@ i {
   min-width: 350px;
   padding: 15px 10px;
   font-size: 16px;
-  color:rgb(46, 46, 46);
+  color: rgb(46, 46, 46);
 }
 
 #search-bar input:focus {
   outline: none;
+}
+
+#search-buttons {
+  margin-bottom: 30px;
+}
+
+.g-search {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 100;
+  width: 150px;
+  background-color: rgba(223, 223, 223, 0.253);
+}
+
+#lang-msg {
+  font-size: 0.9em;
+  color: rgb(36, 36, 36);
 }
 
 /* footer */
@@ -93,15 +113,22 @@ footer {
   background-color: rgba(202, 202, 202, 0.219);
 }
 
+footer div {
+  border-top: 1.3px rgba(148, 148, 148, 0.226) solid;
+  padding: 12px 15px;
+}
 #footer-links {
   display: flex;
   justify-content: space-between;
 }
 
+#country p {
+  padding-left: 15px;
+}
 #footer-links ul {
   display: flex;
 }
 
 #footer-links ul li {
-  padding: 10px;
+  padding: 0 15px;
 }
