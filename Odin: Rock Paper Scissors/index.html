@@ -1,0 +1,61 @@
+<script>
+  function computerSelection() {
+    let randomNumber = Math.floor(Math.random() * Math.floor(3));
+    let computerChoice = "";
+    if (randomNumber === 0) {
+      computerChoice = "rock";
+    } else if (randomNumber === 1) {
+      computerChoice = "paper";
+    } else {
+      computerChoice = "scissors";
+    }
+    return computerChoice;
+  }
+
+  function playerSelection() {
+    let playerChoice = "";
+    do {
+      playerChoice = window.prompt("Enter your choice:");
+      playerChoice = playerChoice.toLowerCase();
+    } while (
+      playerChoice == "rock" ||
+      playerChoice == "scissors" ||
+      playerChoice == "paper"
+    );
+    return playerChoice;
+  }
+
+  function playRound(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+      return "It's a draw!";
+    } else if (
+      (playerChoice == "rock" && computerChoice == "paper") ||
+      (playerChoice == "paper" && computerChoice == "scissors") ||
+      (playerChoice == "scissors" && computerChoice == "rock")
+    ) {
+      return `You Lose! ${computerChoice} beats ${playerChoice}`;
+    } else {
+      return `You Win! ${playerChoice} beats ${computerChoice}`;
+    }
+  }
+
+  function game() {
+      let playerCounter = 0;
+      let computerCounter = 0;
+      function increaseCounter() {
+          let playerChoice = playerSelection();
+          let computerChoice = computerSelection();
+          let result = '';
+          result = playRound(playerChoice, computerChoice)
+          console.log(result)
+          if (result === `You Lose! ${computerChoice} beats ${playerChoice}`) {
+              computerChoice = computerChoice++;
+          } else {
+              playerChoice = playerChoice++;
+          }
+          console.log(`${playerCounter} - ${computerCounter}`)
+      }
+      increaseCounter()
+      increaseCounter()
+  }
+</script>
