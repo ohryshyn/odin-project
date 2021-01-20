@@ -1,31 +1,21 @@
 <script>
   function computerSelection() {
     let randomNumber = Math.floor(Math.random() * Math.floor(3));
-    let computerChoice = "";
-    if (randomNumber === 0) {
-      computerChoice = "rock";
-    } else if (randomNumber === 1) {
-      computerChoice = "paper";
-    } else {
-      computerChoice = "scissors";
+    switch (randomNumber) {
+      case 0:
+        return "rock";
+      case 1:
+        return "paper";
+      case 2:
+        return "scissors";
     }
-    return computerChoice;
   }
 
   function playerSelection() {
-    let playerChoice = "";
-    do {
-      playerChoice = window.prompt("Enter your choice:");
-      playerChoice = playerChoice.toLowerCase();
-    } while (
-      playerChoice == "rock" ||
-      playerChoice == "scissors" ||
-      playerChoice == "paper"
-    );
-    return playerChoice;
+    return window.prompt("Enter your choice:").toLowerCase();
   }
 
-  function playRound(playerChoice, computerChoice) {
+  function getResult(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
       return "It's a draw!";
     } else if (
@@ -39,23 +29,33 @@
     }
   }
 
-  function game() {
-      let playerCounter = 0;
-      let computerCounter = 0;
-      function increaseCounter() {
-          let playerChoice = playerSelection();
-          let computerChoice = computerSelection();
-          let result = '';
-          result = playRound(playerChoice, computerChoice)
-          console.log(result)
-          if (result === `You Lose! ${computerChoice} beats ${playerChoice}`) {
-              computerChoice = computerChoice++;
-          } else {
-              playerChoice = playerChoice++;
-          }
-          console.log(`${playerCounter} - ${computerCounter}`)
-      }
-      increaseCounter()
-      increaseCounter()
+  function playRound() {
+    let playerChoice = playerSelection();
+    let computerChoice = computerSelection();
+    console.log(getResult(playerChoice, computerChoice));
+    return getResult(playerChoice, computerChoice);
   }
+
+  function game() {
+    let playerCounter = 0;
+    let computerCounter = 0;
+    let gameResult;
+    while ((playerCounter !== 3) || (computerCounter !== 3)) {
+      gameResult = playRound();
+      if (gameResult.includes("Win")) {
+        playerCounter++;
+      } else if (gameResult.includes("Lose")) {
+        computerCounter++;
+      }
+      console.log(`${playerCounter} - ${computerCounter}`);
+    }
+
+
+    if (playerCounter === 3) {
+      console.log("Player wins!");
+    } else {
+      console.log("Computer wins!");
+    }
+  }
+
 </script>
