@@ -62,17 +62,31 @@
           return `You Win! ${playerChoice} beats ${computerChoice}`;
         }
       }
-      //let playerCounter = 0;
-      //let computerCounter = 0;
+      let playerCounter = 0;
+      let computerCounter = 0;
       const buttons = Array.from(document.querySelectorAll(".pchoice"));
       const result = document.getElementById("announcement");
       const score = document.getElementById("score");
       buttons.forEach((button) =>
         button.addEventListener("click", () => {
-          result.textContent = getResult(button.id, computerSelection());
-         // playerCounter++;
-         // computerCounter++;
-          score.textContent = `${playerCounter} - ${computerCounter}`;
+          if (playerCounter === 3) {
+            score.textContent = "Player WINS!";
+            playerCounter = 0;
+            computerCounter = 0;
+          } else if (computerCounter === 3) {
+            score.textContent = "CPU WINS!";
+            playerCounter = 0;
+            computerCounter = 0;
+          } else {
+            result.textContent = getResult(button.id, computerSelection());
+
+            if (result.textContent.includes("Win")) {
+              playerCounter++;
+            } else if (result.textContent.includes("Lose")) {
+              computerCounter++;
+            }
+            score.textContent = `${playerCounter}-${computerCounter}`;
+          }
         })
       );
     </script>
