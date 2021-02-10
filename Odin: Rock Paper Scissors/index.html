@@ -29,66 +29,12 @@
       </button>
     </div>
     <div id="results">
-      <h2 id="announcement">placeholder</h2>
-      <h3 id="score">score</h3>
+      <h2 id="announcement"></h2>
+      <h3 id="score"></h3>
     </div>
     <div id="newgame">
-      <button id="restart">Play again?</button>
+      <button id="restart">PLAY AGAIN</button>
     </div>
-    <!-- <script src="script.js"></script> -->
-    <script>
-      function computerSelection() {
-        let randomNumber = Math.floor(Math.random() * Math.floor(3));
-        switch (randomNumber) {
-          case 0:
-            return "rock";
-          case 1:
-            return "paper";
-          case 2:
-            return "scissors";
-        }
-      }
-
-      function getResult(playerChoice, computerChoice) {
-        if (playerChoice === computerChoice) {
-          return "It's a draw!";
-        } else if (
-          (playerChoice == "rock" && computerChoice == "paper") ||
-          (playerChoice == "paper" && computerChoice == "scissors") ||
-          (playerChoice == "scissors" && computerChoice == "rock")
-        ) {
-          return `You Lose! ${computerChoice} beats ${playerChoice}`;
-        } else {
-          return `You Win! ${playerChoice} beats ${computerChoice}`;
-        }
-      }
-      let playerCounter = 0;
-      let computerCounter = 0;
-      const buttons = Array.from(document.querySelectorAll(".pchoice"));
-      const result = document.getElementById("announcement");
-      const score = document.getElementById("score");
-      buttons.forEach((button) =>
-        button.addEventListener("click", () => {
-          if (playerCounter === 3) {
-            score.textContent = "Player WINS!";
-            playerCounter = 0;
-            computerCounter = 0;
-          } else if (computerCounter === 3) {
-            score.textContent = "CPU WINS!";
-            playerCounter = 0;
-            computerCounter = 0;
-          } else {
-            result.textContent = getResult(button.id, computerSelection());
-
-            if (result.textContent.includes("Win")) {
-              playerCounter++;
-            } else if (result.textContent.includes("Lose")) {
-              computerCounter++;
-            }
-            score.textContent = `${playerCounter}-${computerCounter}`;
-          }
-        })
-      );
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

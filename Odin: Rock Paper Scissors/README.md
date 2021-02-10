@@ -4,6 +4,6 @@ In this project I will create a simple Rock Paper Scissors web game application 
 
 ## Goals
 
-- [] Get hands-on experience on DOM manipulation with JS
-- [] Revise HTML/CSS shortcuts
-- [] Deepen the knowledge on JS functions
+- [x] Get hands-on experience on DOM manipulation with JS
+- [x] Revise HTML/CSS shortcuts
+- [x] Deepen the knowledge on JS functions
